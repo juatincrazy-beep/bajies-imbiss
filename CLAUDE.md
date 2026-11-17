@@ -17,7 +17,7 @@ Lies sie zu Beginn jeder Sitzung vollständig. Wenn sich Entscheidungen ändern,
 - Wenn etwas kaputtgeht: Ursache in einfachen Worten erklären, bevor du es reparierst.
 - Claude kann Godot in der Cloud-Sitzung **nicht starten**; Tests macht der Entwickler. Skripte prüfst du vor jedem Push mit gdtoolkit (`gdparse`) und `tools/check_locals.py` (doppelte Variablen/Member).
 - Der Entwickler holt Änderungen mit **GitHub Desktop** (Fetch/Pull).
-- **F6 startet die gerade im Editor geöffnete Szene**, F5 die Hauptszene (`diner_debug.tscn`). Das bei Anleitungen immer dazusagen.
+- **F6 startet die gerade im Editor geöffnete Szene**, F5 die Hauptszene (`diner_main.tscn`). Das bei Anleitungen immer dazusagen.
 
 ---
 
@@ -70,7 +70,7 @@ res://
 
 ---
 
-## 6. Kernsysteme (Stand: Spielkern gebaut, ungetestet)
+## 6. Kernsysteme (Stand 2026-11-17: Spielkern getestet, Spielbildschirm gebaut)
 
 - **Daten** (`*_def.gd`, `.tres`): 8 Zutaten, 8 Gerichte (Geschmacks-Tags sweet/savory/hot/cold/spicy/hearty/light/soft/crunchy), 6 Gäste (Likes/Dislikes, Geduld, erscheinen nach N bedienten Portionen, Stammgast nach glücklichen Besuchen, Geschenke), 4 Tagesausflüge, 4 Verbesserungen.
 - **`DinerGame`**: Gäste kommen und warten, der Spieler wählt ein Gericht (Bonus ×1,25) oder Bajie wählt nach 3 s selbst, Kochen, Bezahlung nach Geschmack (`taste_score`: gemochte Tags − 2 × ungemochte), Bajie nascht, Stammgäste schalten Rezepte frei, Markt, Verbesserungen, Wukongs Ausflüge in Echtzeit (laufen auch bei geschlossenem Spiel), Spielstand `user://diner.cfg`, Offline-Fortschritt (max. 12 h, Schritte à 2 s).
@@ -90,7 +90,7 @@ res://
 
 ## 8. Fortschritt
 
-- [ ] Schritt 1 – Spielkern ohne Grafik (gebaut, wartet auf Test)
+- [x] Schritt 1 – Spielkern ohne Grafik (getestet 2026-11-17)
 - [ ] Schritt 2 – Darstellung (2D-Bildschirm mit Platzhaltern gebaut, ungetestet; echte Bilder stehen aus)
 - [ ] Schritt 3 – Tag-Karte
 - [ ] Schritt 4 – Orte, Inhalte, Musik, Erfolge, Demo
