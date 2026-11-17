@@ -62,7 +62,7 @@ var trip_end: float = 0.0
 # --- State of the moment (not saved) -----------------------------------------------------
 ## Waiting guests, front first. Each entry: {guest, patience, waited, dish, manual, cooking}.
 var waiting: Array[Dictionary] = []
-## The dish on the stove: {} or {dish, left, order (a `waiting` entry)}.
+## The dish on the stove: {} or {dish, left, total, order (a `waiting` entry)}.
 var cooking: Dictionary = {}
 
 var _next_entry_id: int = 1
@@ -213,7 +213,8 @@ func _start_next_dish() -> void:
 		for ingredient: String in dish.ingredients.keys():
 			pantry[ingredient] = int(pantry.get(ingredient, 0)) - int(dish.ingredients[ingredient])
 		entry["cooking"] = true
-		cooking = {"dish": dish.id, "left": dish.cook_seconds * _cook_factor(), "order": entry}
+		var cook_time: float = dish.cook_seconds * _cook_factor()
+		cooking = {"dish": dish.id, "left": cook_time, "total": cook_time, "order": entry}
 		changed.emit()
 		return
 

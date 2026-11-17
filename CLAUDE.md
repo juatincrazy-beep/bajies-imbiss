@@ -47,7 +47,7 @@ Lies sie zu Beginn jeder Sitzung vollständig. Wenn sich Entscheidungen ändern,
 ```
 res://
 ├── scripts/diner/      # Spiellogik ohne Grafik (DinerGame, DinerCatalog, *_def.gd Datenklassen)
-├── scenes/diner/       # Test-Oberfläche, Daten (data/*.tres, erzeugt von tools/gen_diner_data.py)
+├── scenes/diner/       # Spielbildschirm (diner_main), Test-Oberfläche (diner_debug), Daten (data/*.tres, erzeugt von tools/gen_diner_data.py)
 ├── assets/             # fonts (mit chinesischen Zeichen), models/ki_modelle (KI-Modelle), später Bilder/Audio
 ├── localization/       # translations.csv (en, de, zh_CN)
 ├── docs/               # Konzept, Testliste (nicht exportiert)
@@ -74,13 +74,13 @@ res://
 
 - **Daten** (`*_def.gd`, `.tres`): 8 Zutaten, 8 Gerichte (Geschmacks-Tags sweet/savory/hot/cold/spicy/hearty/light/soft/crunchy), 6 Gäste (Likes/Dislikes, Geduld, erscheinen nach N bedienten Portionen, Stammgast nach glücklichen Besuchen, Geschenke), 4 Tagesausflüge, 4 Verbesserungen.
 - **`DinerGame`**: Gäste kommen und warten, der Spieler wählt ein Gericht (Bonus ×1,25) oder Bajie wählt nach 3 s selbst, Kochen, Bezahlung nach Geschmack (`taste_score`: gemochte Tags − 2 × ungemochte), Bajie nascht, Stammgäste schalten Rezepte frei, Markt, Verbesserungen, Wukongs Ausflüge in Echtzeit (laufen auch bei geschlossenem Spiel), Spielstand `user://diner.cfg`, Offline-Fortschritt (max. 12 h, Schritte à 2 s).
-- **Test-Oberfläche** `scenes/diner/diner_debug.tscn` (Hauptszene): reine Steuerung ohne Grafik, Knopf „Test: Tempo ×“ beschleunigt.
+- **Test-Oberfläche** `scenes/diner/diner_debug.tscn` (F6): reine Steuerung ohne Grafik. **Spielbildschirm** `scenes/diner/diner_main.tscn` (Hauptszene, F5, 2D mit Platzhaltern): Bajies Stand links (wackelt beim Kochen, Fortschrittsbalken, Dampf), Gäste auf Hockern rechts (Karte mit Geschmack, Geduld-Balken, Gericht-Knöpfe grün/gelb/rot nach Geschmack, Pop-in-Animation), unten Vorrat + Reiter Markt / Wukongs Ausflüge / Verbesserungen, Meldungen oben, „+Münzen“ steigen auf. Bilder werden über Dateinamen ersetzt (`assets/art/README.md`). Knopf „Test: Tempo ×“ beschleunigt.
 
 ---
 
 ## 7. Bauplan
 
-1. **Spielkern ohne Grafik** ✔ gebaut, Test ausstehend (Testliste 1).
+1. **Spielkern ohne Grafik** ✔ gebaut und vom Entwickler getestet („geht alles“, 2026-11-17).
 2. Darstellung (2D oder 3D): erste Szene mit Stand, Bajie und Gästen, Hauptmenü.
 3. Tag-Karte: Wukong auf Ausflug schicken (Darstellung, Rückkehr-Szene).
 4. Mehrere Orte (die sieben Welten aus Carry the Monk als Kulisse), mehr Gäste/Rezepte, Musik, Erfolge, Demo.
@@ -91,7 +91,7 @@ res://
 ## 8. Fortschritt
 
 - [ ] Schritt 1 – Spielkern ohne Grafik (gebaut, wartet auf Test)
-- [ ] Schritt 2 – Darstellung
+- [ ] Schritt 2 – Darstellung (2D-Bildschirm mit Platzhaltern gebaut, ungetestet; echte Bilder stehen aus)
 - [ ] Schritt 3 – Tag-Karte
 - [ ] Schritt 4 – Orte, Inhalte, Musik, Erfolge, Demo
 - [ ] Schritt 5 – Ausflüge mit Bewegung, Koop, Steam
@@ -102,3 +102,4 @@ res://
 - 2026-11-17: Eigenes Projekt/Repo, damit Carry the Monk unverändert weiterlebt. Übernommen: Schrift, KI-Modelle (`assets/models/ki_modelle/game`), Arbeitsweise. Nicht übernommen: Turm, Physik, Netzwerk, Menü-Design (kann später aus dem alten Repo geholt werden).
 - 2026-11-17: Spielkern gebaut (siehe Abschnitt 6). Offene Entscheidung: 2D-Bilderbuch oder 3D (Stil-Test mit fünf Einzelbildern aus ChatGPT steht aus).
 - Aus dem alten Projekt gelernt: KI-Modelle (Tripo) mit Mixamo-Skelett lassen sich in Godot per Code animieren (`SkeletonFigure` im alten Repo, `scenes/player/skeleton_figure.gd`); Schrittlänge für Menschenmodelle ≈ 3 m pro vollem Schritt, sonst „zittern“ die Gliedmaßen. KI-Modell-Originale (je 60 MB) liegen nur im alten Repo (`tools/ki_originals`).
+- 2026-11-17: Spielkern vom Entwickler getestet: „geht alles“. Erste 2D-Darstellung `diner_main` mit Emoji-Platzhaltern gebaut (Entscheidung 2D vorläufig, weil das ChatGPT-Testbild im Bilderbuch-Stil sehr gut aussah und 2D weniger Aufwand ist; 3D bleibt möglich, die Logik ist getrennt). Bilder per Dateiname austauschbar (`assets/art/`). Hauptszene jetzt `diner_main.tscn`.
