@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="DishDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/diner/dish_def.gd" id="1_def"]
+
+[resource]
+script = ExtResource("1_def")
+id = "peach_bun"
+name_key = "DISH_PEACH_BUN"
+icon = "🥟"
+ingredients = {
+"peach": 2,
+"rice": 1
+}
+tags = PackedStringArray("sweet", "soft")
+base_price = 9
+cook_seconds = 8.0
+unlocked_by_guest = ""

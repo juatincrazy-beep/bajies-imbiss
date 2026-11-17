@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ExpeditionDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/diner/expedition_def.gd" id="1_def"]
+
+[resource]
+script = ExtResource("1_def")
+id = "spice_slope"
+name_key = "TRIP_SPICE_SLOPE"
+icon = "⛰"
+duration_seconds = 120.0
+yields = {
+"ginger": [2, 3],
+"chili": [2, 4],
+"honey": [1, 2]
+}
+appears_after_served = 15

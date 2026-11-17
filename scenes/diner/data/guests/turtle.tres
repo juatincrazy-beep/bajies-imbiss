@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="GuestDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/diner/guest_def.gd" id="1_def"]
+
+[resource]
+script = ExtResource("1_def")
+id = "turtle"
+name_key = "GUEST_TURTLE"
+icon = "🐢"
+likes = PackedStringArray("savory", "hot")
+dislikes = PackedStringArray("cold")
+patience_seconds = 70.0
+friendship_needed = 7
+appears_after_served = 40
+gift_ingredient = "mushroom"
+gift_amount = 3
+gift_every_visits = 4
+weight = 1.0

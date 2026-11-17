@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="UpgradeDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/diner/upgrade_def.gd" id="1_def"]
+
+[resource]
+script = ExtResource("1_def")
+id = "cook_speed"
+name_key = "UPG_COOK_SPEED"
+icon = "🔥"
+effect = 1
+base_cost = 30
+cost_growth = 1.8
+max_level = 8
+amount_per_level = 0.1

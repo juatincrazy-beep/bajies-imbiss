@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ExpeditionDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/diner/expedition_def.gd" id="1_def"]
+
+[resource]
+script = ExtResource("1_def")
+id = "rice_terraces"
+name_key = "TRIP_RICE_TERRACES"
+icon = "🌾"
+duration_seconds = 60.0
+yields = {
+"rice": [6, 9]
+}
+appears_after_served = 0

@@ -1,0 +1,18 @@
+# Godot 4 generated files
+.godot/
+/android/
+*.translation
+
+# Exports
+/build/
+*.exe
+*.pck
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+*.zip
+
+# Python cache
+__pycache__/

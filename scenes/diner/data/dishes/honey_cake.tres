@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="DishDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/diner/dish_def.gd" id="1_def"]
+
+[resource]
+script = ExtResource("1_def")
+id = "honey_cake"
+name_key = "DISH_HONEY_CAKE"
+icon = "🍰"
+ingredients = {
+"honey": 1,
+"peach": 1,
+"rice": 1
+}
+tags = PackedStringArray("sweet", "hot", "soft")
+base_price = 16
+cook_seconds = 11.0
+unlocked_by_guest = "fox_spirit"

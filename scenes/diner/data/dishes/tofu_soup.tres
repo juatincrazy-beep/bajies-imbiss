@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="DishDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/diner/dish_def.gd" id="1_def"]
+
+[resource]
+script = ExtResource("1_def")
+id = "tofu_soup"
+name_key = "DISH_TOFU_SOUP"
+icon = "🍲"
+ingredients = {
+"tofu": 2,
+"ginger": 1
+}
+tags = PackedStringArray("hot", "light")
+base_price = 10
+cook_seconds = 9.0
+unlocked_by_guest = ""

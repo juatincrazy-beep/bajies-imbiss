@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="GuestDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/diner/guest_def.gd" id="1_def"]
+
+[resource]
+script = ExtResource("1_def")
+id = "villager"
+name_key = "GUEST_VILLAGER"
+icon = "🧑‍🌾"
+likes = PackedStringArray("hearty", "hot")
+dislikes = PackedStringArray("spicy")
+patience_seconds = 55.0
+friendship_needed = 4
+appears_after_served = 0
+gift_ingredient = "rice"
+gift_amount = 3
+gift_every_visits = 3
+weight = 3.0

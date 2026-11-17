@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="DishDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/diner/dish_def.gd" id="1_def"]
+
+[resource]
+script = ExtResource("1_def")
+id = "cold_peach_dessert"
+name_key = "DISH_COLD_PEACH_DESSERT"
+icon = "🍧"
+ingredients = {
+"peach": 2,
+"honey": 1
+}
+tags = PackedStringArray("sweet", "cold")
+base_price = 15
+cook_seconds = 9.0
+unlocked_by_guest = "hungry_ghost"

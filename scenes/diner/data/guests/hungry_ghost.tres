@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="GuestDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/diner/guest_def.gd" id="1_def"]
+
+[resource]
+script = ExtResource("1_def")
+id = "hungry_ghost"
+name_key = "GUEST_HUNGRY_GHOST"
+icon = "👻"
+likes = PackedStringArray("cold", "sweet")
+dislikes = PackedStringArray("hot")
+patience_seconds = 45.0
+friendship_needed = 5
+appears_after_served = 4
+gift_ingredient = "peach"
+gift_amount = 2
+gift_every_visits = 4
+weight = 2.0

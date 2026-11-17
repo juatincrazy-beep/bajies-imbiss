@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="IngredientDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/diner/ingredient_def.gd" id="1_def"]
+
+[resource]
+script = ExtResource("1_def")
+id = "mushroom"
+name_key = "ING_MUSHROOM"
+icon = "🍄"
+buy_price = 4

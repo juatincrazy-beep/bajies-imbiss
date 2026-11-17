@@ -1,0 +1,72 @@
+keys,en,de,zh_CN
+DINER_TITLE,Bajie's Food Stall,Bajies Imbiss,八戒小吃摊
+DINER_COINS,Coins: %d,Münzen: %d,铜钱：%d
+DINER_STOCK,Pantry,Vorrat,库存
+DINER_QUEUE,Guests,Gäste,客人
+DINER_NOBODY,Nobody here yet …,Noch niemand da …,还没有客人……
+DINER_COOKING,Bajie is cooking: %s (%d s),Bajie kocht: %s (%d s),八戒正在做：%s（%d 秒）
+DINER_IDLE_COOK,Bajie is waiting for orders.,Bajie wartet auf Bestellungen.,八戒在等订单。
+DINER_MARKET,Market,Markt,集市
+DINER_BUY,Buy %s (%d coins),%s kaufen (%d Münzen),购买%s（%d铜钱）
+DINER_TRIPS,Wukong's day trips,Wukongs Tagesausflüge,悟空的远行
+DINER_TRIP_START,%s (%d s),%s (%d s),%s（%d秒）
+DINER_TRIP_RUNNING,%s: back in %d s,%s: zurück in %d s,%s：%d秒后回来
+DINER_UPGRADES,Upgrades,Verbesserungen,升级
+DINER_UPGRADE_BUY,%s – level %d/%d (%d coins),%s – Stufe %d/%d (%d Münzen),%s – %d/%d级（%d铜钱）
+DINER_UPGRADE_MAX,%s – maxed,%s – am Maximum,%s – 已满级
+DINER_REGULARS,Regulars: %s,Stammgäste: %s,常客：%s
+DINER_NO_REGULARS,none yet,noch keine,暂无
+DINER_SERVED,Served: %d,Bedient: %d,已招待：%d
+DINER_FASTER,Test: speed x%d,Test: Tempo x%d,测试：速度x%d
+DINER_EVENT_REGULAR,%s is a regular now!,%s ist jetzt Stammgast!,%s成了常客！
+DINER_EVENT_RECIPE,New recipe: %s,Neues Rezept: %s,新菜谱：%s
+DINER_EVENT_LEFT,%s left hungry.,%s ging hungrig davon.,%s饿着肚子走了。
+DINER_EVENT_SNACK,Bajie nibbled some of the %s!,Bajie hat vom %s genascht!,八戒偷吃了一口%s！
+DINER_EVENT_GIFT,%s brought %d x %s.,%s brachte %d x %s mit.,%s带来了%d个%s。
+DINER_EVENT_TRIP_HOME,Wukong is back from the %s!,Wukong ist zurück von: %s!,悟空从%s回来了！
+DINER_EVENT_OFFLINE,"While you were away: %d guests, +%d coins.","Während du weg warst: %d Gäste, +%d Münzen.",你不在时：%d位客人，+%d铜钱。
+DINER_SERVE,Serve:,Servieren:,上菜：
+TAG_SWEET,sweet,süß,甜
+TAG_SAVORY,savory,herzhaft-würzig,咸香
+TAG_HOT,hot,heiß,热
+TAG_COLD,cold,kalt,冷
+TAG_SPICY,spicy,scharf,辣
+TAG_HEARTY,hearty,deftig,实在
+TAG_LIGHT,light,leicht,清淡
+TAG_SOFT,soft,weich,软
+TAG_CRUNCHY,crunchy,knusprig,脆
+DINER_LIKES,likes,mag,喜欢
+DINER_DISLIKES,dislikes,mag nicht,讨厌
+DINER_HAPPY,Happy!,Glücklich!,满意！
+DINER_OKAY,Okay.,Geht so.,还行。
+DINER_NOT_HAPPY,Not what I wanted …,"Nicht, was ich wollte …",不是我想要的……
+ING_PEACH,Peach,Pfirsich,桃子
+ING_RICE,Rice,Reis,大米
+ING_TOFU,Tofu,Tofu,豆腐
+ING_BAMBOO,Bamboo shoots,Bambussprossen,竹笋
+ING_MUSHROOM,Mushrooms,Pilze,蘑菇
+ING_GINGER,Ginger,Ingwer,生姜
+ING_HONEY,Honey,Honig,蜂蜜
+ING_CHILI,Chili,Chili,辣椒
+DISH_RICE_BOWL,Rice bowl,Reisschüssel,米饭碗
+DISH_PEACH_BUN,Peach bun,Pfirsichbrötchen,桃子包
+DISH_TOFU_SOUP,Tofu soup,Tofusuppe,豆腐汤
+DISH_MUSHROOM_DUMPLINGS,Mushroom dumplings,Pilzteigtaschen,蘑菇饺子
+DISH_BAMBOO_STIRFRY,Bamboo stir-fry,Bambus-Pfanne,炒竹笋
+DISH_COLD_PEACH_DESSERT,Cold peach dessert,Kaltes Pfirsichdessert,冰桃甜品
+DISH_HONEY_CAKE,Honey cake,Honigkuchen,蜂蜜糕
+DISH_SPICY_POT,Spicy pot,Scharfer Topf,麻辣锅
+GUEST_VILLAGER,Villager,Dorfbewohner,村民
+GUEST_HUNGRY_GHOST,Hungry ghost,Hungriger Geist,饿鬼
+GUEST_FOX_SPIRIT,Fox spirit,Fuchsgeist,狐仙
+GUEST_CRANE,Crane spirit,Kranichgeist,仙鹤
+GUEST_OGRE,Ogre,Oger,山妖
+GUEST_TURTLE,Old turtle,Alte Schildkröte,老龟
+TRIP_RICE_TERRACES,Rice terraces,Reisterrassen,梯田
+TRIP_PEACH_GROVE,Peach grove,Pfirsichhain,桃林
+TRIP_BAMBOO_FOREST,Bamboo forest,Bambuswald,竹林
+TRIP_SPICE_SLOPE,Spice slope,Gewürzhang,香料坡
+UPG_SEATS,More seats,Mehr Sitzplätze,更多座位
+UPG_COOK_SPEED,Faster stove,Schnellerer Herd,更快的灶
+UPG_ARRIVAL_SPEED,Bigger lantern,Größere Laterne,更大的灯笼
+UPG_SNACK_GUARD,Hands off!,Finger weg!,不许偷吃

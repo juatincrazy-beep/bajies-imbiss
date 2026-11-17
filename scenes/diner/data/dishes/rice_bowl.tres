@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="DishDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/diner/dish_def.gd" id="1_def"]
+
+[resource]
+script = ExtResource("1_def")
+id = "rice_bowl"
+name_key = "DISH_RICE_BOWL"
+icon = "🍚"
+ingredients = {
+"rice": 2
+}
+tags = PackedStringArray("hearty", "hot")
+base_price = 5
+cook_seconds = 6.0
+unlocked_by_guest = ""
